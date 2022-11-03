@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // Q: How we can find a longest word from a given string ?
+
+  // Step 1. We will have to convert a string into an array, for ittrating a loop on each word.
+  // Step 2. For converting them into an array we will use split method.
+  // Step 3. Then we will aplly sort method,
+
+  // With sort method :
+
+  // Both method apply in single line ( split() and sort() ) :
+
+  let str2 = "Hello my name is Aniket & i'm from Sehore in MadhyaPradesh";
+
+  const orderedArray2 = str2.split(" ").sort((a, b) => b.length - a.length);
+  console.log("orderedArray2 :", orderedArray2[0]);
+</script>

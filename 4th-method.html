@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // Q: How we can find a longest word from a given string ?
+
+  // Step 1. We will have to convert a string into an array, for ittrating a loop on each word.
+  // Step 2. For converting them into an array we will use split method.
+  // Step 3. After ittrating a loop on word we will have to push that length of word as key in object.
+  // Step 4. We will have to store all keys of object in one variable.
+  // Step 5. We will use max method to find a max word inside an array.
+
+  // With Object :
+
+  let str = "Hello my name is Aniket Thakur & i'm from Sehore in MadhyaPradesh";
+  str = str.split(" ");
+  let obj = {};
+  for (let i = 0; i < str.length; i++) {
+    obj[str[i].length] = str[i];
+  }
+
+  let keyss = Object.keys(obj);
+  let maxWord = Math.max(...keyss);
+
+  console.log("maxWord :", obj[maxWord]);
+</script>
